@@ -12,7 +12,7 @@ Sistema WEB para a ONG fictícia **Patinhas Unidas**, dedicada ao resgate e ado�
 
 ## 📽️ Vídeo de Apresentação
 
-🎥 **[Link do YouTube – em breve](#)**
+🎥 ** https://youtu.be/QcG4qbXSatY **
 
 ## 📄 Páginas do Sistema
 
