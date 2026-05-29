@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Como Ajudar – Patinhas Unidas</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    .steps { counter-reset: steps; display:flex; flex-direction:column; gap:24px; }
+    .step { display:flex; gap:24px; align-items:flex-start; background:var(--white); border-radius:var(--radius); padding:28px; box-shadow:var(--shadow); }
+    .step-num { counter-increment:steps; min-width:48px; height:48px; border-radius:50%; background:var(--amber); color:#fff; font-family:'Playfair Display',serif; font-size:1.3rem; font-weight:700; display:flex; align-items:center; justify-content:center; }
+    .step h3 { margin-bottom:6px; }
+    .step p { font-size:0.9rem; color:var(--text-muted); }
+    .pix-box { background:var(--green); color:#fff; border-radius:var(--radius); padding:36px; text-align:center; }
+    .pix-key { background:rgba(255,255,255,0.15); border-radius:var(--radius-sm); padding:16px 24px; font-size:1.1rem; font-weight:500; margin:16px 0; letter-spacing:0.05em; }
+    .copy-btn { background:var(--amber); color:#fff; border:none; padding:10px 24px; border-radius:100px; font-family:'DM Sans',sans-serif; font-weight:500; cursor:pointer; transition:background 0.2s; }
+    .copy-btn:hover { background:var(--amber-dark); }
+  </style>
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">🐾 Patinhas Unidas</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="animais.html">Animais</a></li>
+        <li><a href="como-ajudar.html" class="active">Como Ajudar</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+      <a href="como-ajudar.html" class="btn-nav">Adote Agora</a>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+    <ul class="nav-mobile" id="navMobile">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="animais.html">Animais</a></li>
+      <li><a href="como-ajudar.html">Como Ajudar</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-hero">
+    <span class="section-tag">Faça a Diferença</span>
+    <h1>Como Ajudar</h1>
+    <p>Existem várias formas de contribuir com a nossa causa.</p>
+  </div>
+
+  <!-- ADOÇÃO -->
+  <section class="section" style="background:var(--cream)">
+    <div class="container">
+      <div class="mission-grid">
+        <div class="mission-text">
+          <span class="section-tag">Adoção Responsável</span>
+          <h2>Como funciona o<br>processo de <em>adoção</em></h2>
+          <p>Nossa adoção é gratuita e responsável. Realizamos uma análise para garantir que o animal vá para o ambiente ideal. Todo o processo é feito com carinho e transparência.</p>
+          <a href="animais.html" class="btn-primary">Ver Animais Disponíveis</a>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div><h3>Escolha o Animal</h3><p>Acesse nossa página de animais e encontre o pet que combina com você e sua família.</p></div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div><h3>Entre em Contato</h3><p>Preencha o formulário de interesse ou nos chame pelo WhatsApp para agendar uma visita.</p></div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div><h3>Entrevista</h3><p>Uma conversa rápida para conhecer seu estilo de vida e garantir o match perfeito com o animal.</p></div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div><h3>Adoção Confirmada!</h3><p>Você assina o termo de adoção responsável e leva seu novo amigo para casa. 🎉</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOAÇÃO -->
+  <section class="section" style="background:var(--white)">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Apoio Financeiro</span>
+        <h2>Doe e <em>salve vidas</em></h2>
+      </div>
+      <div class="mission-grid">
+        <div>
+          <p style="color:var(--text-muted);margin-bottom:20px;">Sua doação, por menor que seja, faz uma diferença enorme. Com R$30, cobrimos a vacinação de um animal. Com R$100, custeamos uma castração.</p>
+          <div class="pix-box">
+            <p style="opacity:0.85;margin-bottom:8px;">Chave PIX (CNPJ)</p>
+            <div class="pix-key">12.345.678/0001-90</div>
+            <button class="copy-btn" onclick="copiarPix()">Copiar Chave PIX</button>
+            <p id="copiado" style="opacity:0;margin-top:12px;font-size:0.85rem;transition:opacity 0.3s">✅ Chave copiada!</p>
+          </div>
+        </div>
+        <div class="mission-cards">
+          <div class="mcard"><div class="mcard-icon">💊</div><h3>R$ 30</h3><p>Cobre a vacinação completa de um animal resgatado.</p></div>
+          <div class="mcard"><div class="mcard-icon">✂️</div><h3>R$ 100</h3><p>Custeia uma cirurgia de castração.</p></div>
+          <div class="mcard"><div class="mcard-icon">🍽️</div><h3>R$ 50</h3><p>Alimenta 5 animais por uma semana inteira.</p></div>
+          <div class="mcard"><div class="mcard-icon">🏥</div><h3>R$ 200</h3><p>Financia uma consulta veterinária de emergência.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOLUNTARIADO -->
+  <section class="help-section section">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-tag">Voluntariado</span>
+        <h2>Doe seu <em>tempo</em></h2>
+      </div>
+      <div class="help-grid">
+        <div class="help-card">
+          <span class="help-icon">🚗</span>
+          <h3>Transporte</h3>
+          <p>Ajude a levar animais para consultas veterinárias e lares temporários.</p>
+        </div>
+        <div class="help-card">
+          <span class="help-icon">📸</span>
+          <h3>Fotografia</h3>
+          <p>Fotografe nossos animais para as redes sociais e materiais de divulgação.</p>
+        </div>
+        <div class="help-card">
+          <span class="help-icon">💻</span>
+          <h3>Comunicação</h3>
+          <p>Ajude a gerenciar redes sociais, criar posts e divulgar os animais.</p>
+        </div>
+        <div class="help-card">
+          <span class="help-icon">🏡</span>
+          <h3>Lar Temporário</h3>
+          <p>Acolha um animal em casa por algumas semanas enquanto aguarda adoção.</p>
+        </div>
+      </div>
+      <div class="center-btn" style="margin-top:40px;">
+        <a href="contato.html" class="btn-primary" style="background:var(--amber)">Quero ser Voluntário</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-logo">🐾 Patinhas Unidas</div>
+        <p>ONG dedicada ao resgate e adoção responsável de animais em São Paulo desde 2015.</p>
+        <p class="footer-cnpj">CNPJ: 12.345.678/0001-90</p>
+      </div>
+      <div>
+        <h4>Páginas</h4>
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="animais.html">Animais</a></li>
+          <li><a href="como-ajudar.html">Como Ajudar</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <p>📍 Rua das Flores, 123 – Vila Madalena, SP</p>
+        <p>📞 (11) 9 8765-4321</p>
+        <p>✉️ contato@patinhasunidas.org</p>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 Patinhas Unidas. Todos os direitos reservados.</p></div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    function copiarPix() {
+      navigator.clipboard.writeText('12.345.678/0001-90');
+      const el = document.getElementById('copiado');
+      el.style.opacity = '1';
+      setTimeout(() => el.style.opacity = '0', 2500);
+    }
+  </script>
+</body>
+</html>
