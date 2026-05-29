@@ -1,122 +1,193 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sobre Nós – Patinhas Unidas</title>
-  <link rel="stylesheet" href="../css/style.css"/>
+  <title>Patinhas Unidas – ONG de Proteção Animal</title>
+  <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 </head>
 <body>
+
+  <!-- NAV -->
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
-      <a href="../index.html" class="logo">🐾 Patinhas Unidas</a>
+      <a href="index.html" class="logo">🐾 Patinhas Unidas</a>
       <ul class="nav-links">
-        <li><a href="../index.html">Início</a></li>
-        <li><a href="sobre.html" class="active">Sobre</a></li>
-        <li><a href="animais.html">Animais</a></li>
-        <li><a href="como-ajudar.html">Como Ajudar</a></li>
-        <li><a href="contato.html">Contato</a></li>
+        <li><a href="index.html" class="active">Início</a></li>
+        <li><a href="pages/sobre.html">Sobre</a></li>
+        <li><a href="pages/animais.html">Animais</a></li>
+        <li><a href="pages/como-ajudar.html">Como Ajudar</a></li>
+        <li><a href="pages/contato.html">Contato</a></li>
       </ul>
-      <a href="como-ajudar.html" class="btn-nav">Adote Agora</a>
+      <a href="pages/como-ajudar.html" class="btn-nav">Adote Agora</a>
       <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     </div>
     <ul class="nav-mobile" id="navMobile">
-      <li><a href="../index.html">Início</a></li>
-      <li><a href="sobre.html">Sobre</a></li>
-      <li><a href="animais.html">Animais</a></li>
-      <li><a href="como-ajudar.html">Como Ajudar</a></li>
-      <li><a href="contato.html">Contato</a></li>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="pages/sobre.html">Sobre</a></li>
+      <li><a href="pages/animais.html">Animais</a></li>
+      <li><a href="pages/como-ajudar.html">Como Ajudar</a></li>
+      <li><a href="pages/contato.html">Contato</a></li>
     </ul>
   </nav>
 
-  <div class="page-hero">
-    <span class="section-tag">Quem Somos</span>
-    <h1>Sobre a Patinhas Unidas</h1>
-    <p>Conheça nossa história, missão e as pessoas por trás desta causa.</p>
-  </div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-tag">ONG de Proteção Animal • São Paulo, SP</span>
+      <h1 class="hero-title">Todo animal<br><em>merece amor</em></h1>
+      <p class="hero-desc">Desde 2015, resgatamos, cuidamos e encontramos lares para cães e gatos abandonados em São Paulo. Mais de 1.200 animais adotados.</p>
+      <div class="hero-btns">
+        <a href="pages/animais.html" class="btn-primary">Ver Animais</a>
+        <a href="pages/como-ajudar.html" class="btn-outline">Quero Ajudar</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">1.200+</span><span class="stat-label">Animais adotados</span></div>
+      <div class="stat"><span class="stat-num">320</span><span class="stat-label">Voluntários ativos</span></div>
+      <div class="stat"><span class="stat-num">9</span><span class="stat-label">Anos de atuação</span></div>
+    </div>
+  </section>
 
-  <section class="section" style="background:var(--white)">
+  <!-- MISSÃO -->
+  <section class="section mission">
     <div class="container">
       <div class="mission-grid">
         <div class="mission-text">
-          <span class="section-tag">Nossa História</span>
-          <h2>De um grupo de amigos<br>a uma <em>grande família</em></h2>
-          <p>Em 2015, um grupo de amigos encontrou uma cadela ferida abandonada em frente a uma escola na Vila Madalena. Sem saber a quem recorrer, decidiram cuidar do animal e, naquele momento, nasceu a Patinhas Unidas.</p>
-          <p>O que começou com 5 voluntários e uma caixa de doações improvisada se transformou em uma das maiores redes de resgate e adoção responsável do Estado de São Paulo.</p>
-          <p>Hoje contamos com mais de 320 voluntários, 2 centros de triagem e parcerias com 14 clínicas veterinárias conveniadas em toda a cidade.</p>
+          <span class="section-tag">Nossa Missão</span>
+          <h2>Resgatar, Cuidar<br>e <em>Transformar Vidas</em></h2>
+          <p>A Patinhas Unidas nasceu da indignação de um grupo de amigos diante do abandono de animais nas ruas de São Paulo. Hoje somos uma das maiores redes de resgate e adoção do estado.</p>
+          <p>Atuamos com responsabilidade e transparência, garantindo que cada animal resgatado receba os cuidados veterinários necessários antes de encontrar uma nova família.</p>
+          <a href="pages/sobre.html" class="btn-primary">Conheça Nossa História</a>
         </div>
         <div class="mission-cards">
-          <div class="mcard"><div class="mcard-icon">📅</div><h3>2015</h3><p>Fundação da ONG com 5 voluntários e os primeiros 3 resgates.</p></div>
-          <div class="mcard"><div class="mcard-icon">🏠</div><h3>2017</h3><p>Abertura do primeiro espaço físico na Vila Madalena.</p></div>
-          <div class="mcard"><div class="mcard-icon">🏥</div><h3>2019</h3><p>Convênios com 14 clínicas para atendimento veterinário gratuito.</p></div>
-          <div class="mcard"><div class="mcard-icon">🌟</div><h3>2024</h3><p>1.200ª adoção realizada. 320 voluntários em 6 bairros.</p></div>
+          <div class="mcard">
+            <div class="mcard-icon">🏥</div>
+            <h3>Cuidado Veterinário</h3>
+            <p>Todos os animais passam por consulta, vacinação e castração antes da adoção.</p>
+          </div>
+          <div class="mcard">
+            <div class="mcard-icon">🏠</div>
+            <h3>Lar Temporário</h3>
+            <p>Rede de famílias voluntárias que acolhem animais enquanto aguardam adoção.</p>
+          </div>
+          <div class="mcard">
+            <div class="mcard-icon">❤️</div>
+            <h3>Adoção Responsável</h3>
+            <p>Processo criterioso para garantir que cada animal vá para uma família amorosa.</p>
+          </div>
+          <div class="mcard">
+            <div class="mcard-icon">📢</div>
+            <h3>Conscientização</h3>
+            <p>Projetos nas escolas e eventos sobre posse responsável de animais.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section" style="background:var(--cream)">
+  <!-- ANIMAIS EM DESTAQUE -->
+  <section class="section featured">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Valores</span>
-        <h2>O que nos <em>guia</em></h2>
-      </div>
-      <div class="help-grid" style="grid-template-columns:repeat(3,1fr)">
-        <div class="mcard" style="background:var(--white)">
-          <div class="mcard-icon">💛</div>
-          <h3>Compaixão</h3>
-          <p>Cada animal é tratado com amor e respeito, independente de sua condição.</p>
-        </div>
-        <div class="mcard" style="background:var(--white)">
-          <div class="mcard-icon">🔍</div>
-          <h3>Transparência</h3>
-          <p>Publicamos relatórios mensais de gastos e quantidade de animais atendidos.</p>
-        </div>
-        <div class="mcard" style="background:var(--white)">
-          <div class="mcard-icon">🤝</div>
-          <h3>Responsabilidade</h3>
-          <p>Acreditamos na adoção consciente e acompanhamos cada família após a adoção.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" style="background:var(--white)">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Time</span>
-        <h2>Conheça nossa <em>equipe</em></h2>
+        <span class="section-tag">Para Adoção</span>
+        <h2>Conheça alguns de<br><em>nossos animais</em></h2>
       </div>
       <div class="animals-grid">
         <div class="animal-card">
-          <div class="animal-img" style="background:#D4B896;display:flex;align-items:center;justify-content:center;font-size:4rem;">👩</div>
+          <div class="animal-img dog1"></div>
           <div class="animal-info">
-            <h3>Ana Rodrigues</h3>
-            <p class="animal-meta">Fundadora & Presidente</p>
-            <p>Veterinária formada pela USP, fundou a ONG após anos trabalhando com animais de rua.</p>
+            <h3>Bolinha</h3>
+            <p class="animal-meta">Cão · 2 anos · Porte médio</p>
+            <p>Brincalhão e carinhoso, adora crianças. Vacinado e castrado.</p>
+            <a href="pages/animais.html" class="btn-sm">Ver Perfil</a>
+          </div>
+        </div>
+        <div class="animal-card featured-card">
+          <span class="badge">Destaque</span>
+          <div class="animal-img cat1"></div>
+          <div class="animal-info">
+            <h3>Mimi</h3>
+            <p class="animal-meta">Gata · 1 ano · Porte pequeno</p>
+            <p>Dócil e curiosa. Ótima para apartamentos. Vacinada e castrada.</p>
+            <a href="pages/animais.html" class="btn-sm">Ver Perfil</a>
           </div>
         </div>
         <div class="animal-card">
-          <div class="animal-img" style="background:#B8A090;display:flex;align-items:center;justify-content:center;font-size:4rem;">👨</div>
+          <div class="animal-img dog2"></div>
           <div class="animal-info">
-            <h3>Felipe Souza</h3>
-            <p class="animal-meta">Coordenador de Resgates</p>
-            <p>Responsável pela equipe de campo, coordena os resgates 24h em São Paulo.</p>
+            <h3>Thor</h3>
+            <p class="animal-meta">Cão · 3 anos · Porte grande</p>
+            <p>Companheiro e leal. Precisa de espaço para correr. Vacinado.</p>
+            <a href="pages/animais.html" class="btn-sm">Ver Perfil</a>
           </div>
         </div>
-        <div class="animal-card">
-          <div class="animal-img" style="background:#C8B0A0;display:flex;align-items:center;justify-content:center;font-size:4rem;">👩</div>
-          <div class="animal-info">
-            <h3>Carla Mendes</h3>
-            <p class="animal-meta">Gestora de Adoções</p>
-            <p>Cuida de todo o processo de adoção e acompanhamento das famílias adotantes.</p>
-          </div>
+      </div>
+      <div class="center-btn">
+        <a href="pages/animais.html" class="btn-outline">Ver Todos os Animais</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO AJUDAR -->
+  <section class="section help-section">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-tag">Faça a Diferença</span>
+        <h2>Existem várias formas<br>de <em>ajudar</em></h2>
+      </div>
+      <div class="help-grid">
+        <a href="pages/como-ajudar.html" class="help-card">
+          <span class="help-icon">🐾</span>
+          <h3>Adote</h3>
+          <p>Dê um lar cheio de amor para um animal que precisa de você.</p>
+        </a>
+        <a href="pages/como-ajudar.html" class="help-card">
+          <span class="help-icon">🤲</span>
+          <h3>Apadrinho</h3>
+          <p>Contribua mensalmente para cobrir os custos de um animal em tratamento.</p>
+        </a>
+        <a href="pages/como-ajudar.html" class="help-card">
+          <span class="help-icon">🏡</span>
+          <h3>Seja Lar Temporário</h3>
+          <p>Acolha um animal em sua casa enquanto ele espera pela adoção definitiva.</p>
+        </a>
+        <a href="pages/como-ajudar.html" class="help-card">
+          <span class="help-icon">💛</span>
+          <h3>Doe</h3>
+          <p>Qualquer valor ajuda a custear ração, medicamentos e cirurgias.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Histórias Reais</span>
+        <h2>Quem adotou<br><em>nos conta</em></h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <p>"Adotei a Luna em 2023 e foi a melhor decisão da minha vida. O processo foi muito tranquilo e a equipe me acompanhou em tudo."</p>
+          <div class="testi-author"><strong>Mariana S.</strong> · Adotante</div>
+        </div>
+        <div class="testi-card highlight">
+          <p>"Sou voluntária há 3 anos e ver cada animal encontrar um lar é uma emoção sem igual. A Patinhas Unidas é uma família!"</p>
+          <div class="testi-author"><strong>Carlos M.</strong> · Voluntário</div>
+        </div>
+        <div class="testi-card">
+          <p>"Meu filho pediu um cachorro e encontramos o Rex aqui. Hoje eles são inseparáveis. Obrigado, Patinhas Unidas!"</p>
+          <div class="testi-author"><strong>Roberto L.</strong> · Adotante</div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-grid">
       <div>
@@ -127,11 +198,11 @@
       <div>
         <h4>Páginas</h4>
         <ul>
-          <li><a href="../index.html">Início</a></li>
-          <li><a href="sobre.html">Sobre Nós</a></li>
-          <li><a href="animais.html">Animais</a></li>
-          <li><a href="como-ajudar.html">Como Ajudar</a></li>
-          <li><a href="contato.html">Contato</a></li>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="pages/sobre.html">Sobre Nós</a></li>
+          <li><a href="pages/animais.html">Animais</a></li>
+          <li><a href="pages/como-ajudar.html">Como Ajudar</a></li>
+          <li><a href="pages/contato.html">Contato</a></li>
         </ul>
       </div>
       <div>
@@ -141,8 +212,11 @@
         <p>✉️ contato@patinhasunidas.org</p>
       </div>
     </div>
-    <div class="footer-bottom"><p>© 2026 Patinhas Unidas. Todos os direitos reservados.</p></div>
+    <div class="footer-bottom">
+      <p>© 2026 Patinhas Unidas. Todos os direitos reservados.</p>
+    </div>
   </footer>
-  <script src="../js/main.js"></script>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
