@@ -60,7 +60,7 @@ cd patinhas-unidas
 
 | Nome | RA |
 |------|-----|
-| [Seu Nome] | [Seu RA] |
+| Pablo Henrique da Silva Gonzaga | 3024100411 |
 
 ## 📁 Estrutura de Arquivos
 
